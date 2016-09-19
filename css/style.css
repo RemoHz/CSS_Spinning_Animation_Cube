@@ -32,8 +32,8 @@ html
 .stage
 {
   -webkit-perspective: 1000px;
-  width: 200em;
-  height: 200em;
+  width: 300em;
+  height: 300em;
   left: 50%;
   top: 50%;
   margin-left: -150em;
@@ -53,32 +53,32 @@ html
 
 .font
 {
-  -webkit-transform: translateZ(200em);
+  -webkit-transform: translateZ(300em);
 }
 
 .back
 {
-  -webkit-transform: rotateX(180deg) translateZ(200em);
+  -webkit-transform: rotateX(180deg) translateZ(300em);
 }
 
 .left
 {
-  -webkit-transform: rotateY(-90deg) translateZ(200em);
+  -webkit-transform: rotateY(-90deg) translateZ(300em);
 }
 
 .right
 {
-  -webkit-transform: rotateY(90deg) translateZ(200em);
+  -webkit-transform: rotateY(90deg) translateZ(300em);
 }
 
 .top
 {
-  -webkit-transform: rotateX(90deg) translateZ(200em);
+  -webkit-transform: rotateX(90deg) translateZ(300em);
 }
 
 .bottom
 {
-  -webkit-transform: rotateX(-90deg) translateZ(200em);
+  -webkit-transform: rotateX(-90deg) translateZ(300em);
 }
 
 @-webkit-keyframes spin
