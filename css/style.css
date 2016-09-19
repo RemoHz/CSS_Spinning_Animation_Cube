@@ -1,3 +1,11 @@
+
+html
+{
+   background: -webkit-radial-gradient(center, ellipse, #430d6d 0%, #000000 100%);
+   background: radial-gradient(ellipse at center, #430d6d 0%, #000000 100%);
+   height: 100%;
+}
+
 .gradient-pattern {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -19,4 +27,80 @@
   background-clip: border-box;
   -webkit-background-size: 200em 200em, 200em 200em, auto auto;
   background-size: 200em 200em, 200em 200em, auto auto;
+}
+
+.stage
+{
+  -webkit-perspective: 1000px;
+  width: 200em;
+  height: 200em;
+  left: 50%;
+  top: 50%;
+  margin-left: -150em;
+  margin-top: -150em;
+  position: absolute;
+}
+
+.cube *
+{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border: 2px solid rgba(54, 226, 248, 0.5);
+  -webkit-box-shadow: 0 0 5em rgba(0, 128, 0, 0.4);
+}
+
+.font
+{
+  -webkit-transform: translateZ(200em);
+}
+
+.back
+{
+  -webkit-transform: rotateX(180deg) translateZ(200em);
+}
+
+.left
+{
+  -webkit-transform: rotateY(-90deg) translateZ(200em);
+}
+
+.right
+{
+  -webkit-transform: rotateY(90deg) translateZ(200em);
+}
+
+.top
+{
+  -webkit-transform: rotateX(90deg) translateZ(200em);
+}
+
+.bottom
+{
+  -webkit-transform: rotateX(-90deg) translateZ(200em);
+}
+
+@-webkit-keyframes spin
+{
+  from
+  {
+     -webkit-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+     transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+  }
+
+  to
+  {
+    -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube
+{
+  -webkit-animation: spin linear 6s infinite;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
 }
